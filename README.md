@@ -110,8 +110,7 @@ Checked on the "Medium Phone" AVD (1080×2400, Android 17), driving the app with
 - The default launcher icon is used.
 
 ## How AI tools were used
-I used AI to quickly build a project structure and help me organize tests, as I hadn't worked with them before. AI also helped me with coding.
-
+I used Claude Code to generate most of the code and tests; I reviewed the ViewModel and state handling, ran the app myself and can explain every decision
 
 What I checked or changed myself:
 - read through `TasksViewModel` and the state-handling table, and checked that I can explain each decision.
