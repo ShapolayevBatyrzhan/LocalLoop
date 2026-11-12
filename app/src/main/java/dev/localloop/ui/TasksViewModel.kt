@@ -109,10 +109,10 @@ class TasksViewModel(
             titleError.value = error
             return
         }
-        // Clear right away so a quick double tap does not add the same task twice.
+
         onTitleChange("")
         safeLaunch(onError = {
-            onTitleChange(trimmed) // give the user their text back
+            onTitleChange(trimmed)
             userMessage.value = UserMessage.ADD_FAILED
         }) {
             repository.addTask(trimmed)

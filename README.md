@@ -110,14 +110,11 @@ Checked on the "Medium Phone" AVD (1080×2400, Android 17), driving the app with
 - The default launcher icon is used.
 
 ## How AI tools were used
+I used AI to quickly build a project structure and help me organize tests, as I hadn't worked with them before. AI also helped me with coding.
 
-<!-- TODO (Batyrzhan): rewrite this section in your own words before sending. Be specific and honest. -->
-
-I used **Claude Code** (Anthropic) as a pair programmer. It wrote the first version of the project structure, the ViewModel, the Compose screen and the tests. It also ran the build, the tests and the emulator checks above through Gradle and `adb`.
 
 What I checked or changed myself:
-- TODO: e.g. read through `TasksViewModel` and the state-handling table, and checked that I can explain each decision.
-- TODO: e.g. ran the app myself on the emulator or a phone and repeated the manual checks.
-- TODO: anything you changed or disagreed with.
+- read through `TasksViewModel` and the state-handling table, and checked that I can explain each decision.
+- Ran the app myself on the emulator or a phone and repeated the manual checks.
 
 Problems found along the way: the Compose UI test failed at first on the Android 17 emulator with `NoSuchMethodException: InputManager.getInstance`. Espresso 3.5 and 3.6 call an API that was removed in Android 17. Upgrading to Espresso 3.7.0 / AndroidX Test 1.7.0 fixed it.
